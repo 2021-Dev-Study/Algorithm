@@ -10,7 +10,7 @@
 - 사이트 : **백준 Baekjun** / **프로그래머스 Programmers** / **릿코드 LeetCode** ++ **코딜리티 Codility**
 - 프레임 워크 : `PyCharm` `VSCode`
 
-_※ 목표 = 백준은 골드...! 프로그래머스는 Lv2...!_
+_※ 목표 = 백준은 골드🏅...! 프로그래머스는 Lv22️⃣...!_
 
 ## 참여 방법
 1. 해당 프로젝트 fork
@@ -23,8 +23,10 @@ _※ 목표 = 백준은 골드...! 프로그래머스는 Lv2...!_
 > 출처 : https://github.com/ROUTINE-STUDY/Algorithm
 
 ## 폴더 구조
-형식 = `Algorithm/출처/문제이름/사용자이름(ID)` </br>
-ex. `Algorithm/Programmers/서울에서김서방찾기/yummygyudon`
+형식 = `Algorithm/출처/문제이름/사용자이름(ID).py` </br>
+ex. `Algorithm/Programmers/서울에서김서방찾기/yummygyudon.py` (코딩테스트 사이트 문제)  
+ex. `Algorithm/Doit/실습1C-2/yummygyudon.py` (교재 실습)
+
 
 ## Pull Request Rule
 로직 설명은 **주석** or **PR 코멘트** </br>
