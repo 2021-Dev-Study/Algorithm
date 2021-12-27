@@ -12,17 +12,17 @@
 
 _※ 목표 = 백준은 골드🏅...! 프로그래머스는 Lv22️⃣...!_
 
-## 참여 방법
+## 🤗참여 방법
 1. 해당 프로젝트 fork
 2. fork된 자신의 원격 저장소 확인
-3. 알고리즘 풀이 후 원격 저장소에 PUSH
-4. Pull Request(PR) 요청
+3. 알고리즘 풀이 후 원격 저장소에 COMMIT
+4. 매주 **일요일** Pull Request(PR) 요청
 5. 스터디 참가자들 코드 리뷰 진행
 6. 코드 리뷰 완료 후 MERGE
 
 > 출처 : https://github.com/ROUTINE-STUDY/Algorithm
 
-## 폴더 구조
+## 📒폴더 구조
 형식 = `Algorithm/출처/문제이름/사용자이름(ID).py` </br>
 ex. `Algorithm/Programmers/서울에서김서방찾기/yummygyudon.py` (코딩테스트 사이트 문제)  
 ex. `Algorithm/Doit/실습1C-2/yummygyudon.py` (교재 실습)
