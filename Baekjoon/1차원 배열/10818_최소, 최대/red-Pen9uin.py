@@ -12,8 +12,10 @@ import sys
 def main():
     num = int(sys.stdin.readline())
     arr = list(map(int, sys.stdin.readline().split()))
-    min = 1000000 # Max value
-    max = -1000000 # Min value
+    # min = 1000000 # Max value
+    # max = -1000000 # Min value
+    min = arr[0] # First value
+    max = arr[0] # First value
     for i in range(0,num):
         min = min if min<arr[i] else arr[i]
         max = max if max>arr[i] else arr[i]
