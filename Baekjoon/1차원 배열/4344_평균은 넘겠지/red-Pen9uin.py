@@ -39,8 +39,7 @@ def main():
     # 각 케이스마다 한 줄씩 출력할 것...
         above_mean = cnt / input[0] * 100
         print("%0.3f" % above_mean + "%")
-        
-
+        # print( f'{above_mean:.3f}%' )
 
 if __name__ == "__main__":
     main()
