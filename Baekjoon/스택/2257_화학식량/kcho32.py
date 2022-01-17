@@ -8,17 +8,17 @@ mass = {
 }
 
 str = list(sys.stdin.readline().rstrip())[::-1]
+print(str)
 answer = 0
 
 while str:
     temp_num = []
     temp_chem = []
     x = str.pop()
-    print(ord(x), x)
-    print(ord('A'))
-
+    
     if x == '(':
         temp_chem.append(x)
+        print(temp_chem)
         
     elif x == ")":
         temp_chem.append(x)
@@ -30,20 +30,20 @@ while str:
         else:
             answer += mass[x]
     
-    elif ord(x) >= ord('2') and ord(x) <= ord('9'):
+    elif x in '23456789':
         temp = []
-        
-        for i in range(len(temp_chem)):
+
+        while temp_chem:
             y = temp_chem.pop()
-            
-            if ord(y) >= ord('A') and ord(y) <= ord('Z'):
+            print(y)
+            if y in "HCO":
                 temp.append(mass[y])
 
             elif ord(y) >= ord('2') and ord(y) <= ord('9'):
-                temp.append(int(y) * temp.pop())
+                temp.append(int(y) * temp_chem.pop())
             
-            elif y == ")":
+            elif y == "(":
                 answer += (sum(temp) * int(x))
-            
+print(answer)        
 
 
