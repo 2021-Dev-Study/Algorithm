@@ -10,31 +10,53 @@ N보다 작거나 같은 자연수 중에서, 집합 K의 원소로만 구성된
 
 import sys
 
+# def big_num(N, nums):
+#     if N > 10:
+#         x = big_num(N//10, nums)
+#         if x == max(nums):
+#             tmp = []
+#             for i in nums:
+#                 if i <= N%10:
+#                     tmp.append(i)
+#             answer.append(max(tmp))
+#             if tmp:
+#                 return max(tmp)
+#             else:
+#                 return 
+#         else:
+#             answer.append(max(nums))
+#             return max(nums)
+
+#     else:
+#         tmp = []
+#         for i in nums:
+#             if i <= N:
+#                 tmp.append(i)
+#         answer.append(max(tmp))
+#         return max(tmp)
+
 def big_num(N, nums):
-    if N > 10:
-        x = big_num(N//10, nums)
-        if x == max(nums):
-            tmp = []
-            for i in nums:
-                if i <= N%10:
-                    tmp.append(i)
+    if N > 0:
+        y = big_num(N//10, nums)
+        if y == 0:
+            answer.append(0)
+            return 0
+        tmp = []
+        x = N % 10
+        print(x)
+        for i in nums:
+            if x >= i:
+                tmp.append(i)
+        if tmp:
             answer.append(max(tmp))
+            print(max(tmp))
             return max(tmp)
         else:
-            answer.append(max(nums))
-            return max(nums)
-
-    else:
-        tmp = []
-        for i in nums:
-            if i <= N:
-                tmp.append(i)
-        answer.append(max(tmp))
-        return max(tmp)
-
-
+            return 0
+    
 N, K = map(int, sys.stdin.readline().rstrip().split(" "))
 nums = list(map(int, sys.stdin.readline().rstrip().split(" ")))
 answer = []
-big_num(N, nums)
-print("".join(list(map(str, answer))))
+print(big_num(N, nums))
+print(answer)
+
