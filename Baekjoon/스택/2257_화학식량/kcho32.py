@@ -17,11 +17,17 @@ while str:
     x = str.pop()
     
     if x == '(':
-        temp_chem.append(x)
         print(temp_chem)
         
     elif x == ")":
-        temp_chem.append(x)
+        temp_num = 0
+        y = str.pop()
+        if y in "23456789":
+            for i in range(temp_chem):
+                if i not in "()":
+                    temp_num += mass[i]
+        answer += temp_num
+        
     
 
     elif ord(x) >= ord('A') and ord(x) <= ord('Z'):

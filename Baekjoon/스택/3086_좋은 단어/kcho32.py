@@ -31,6 +31,7 @@ answer = 0
 
 for i in range(n):
     temp = []
+    ## 받은 문자열을 거꾸로 입력
     str = list(sys.stdin.readline().rstrip()[::-1])
     temp.append(str.pop())
     

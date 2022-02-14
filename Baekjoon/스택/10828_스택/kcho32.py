@@ -10,7 +10,10 @@ for i in range(n):
     if command[0] == "push":
         stack.append(command[1])
     elif command[0] == "top":
-        print(stack[-1])
+        if stack:
+            print(stack[-1])
+        else:
+            print('-1')
     elif command[0] == "size":
         print(len(stack))
     elif command[0] == "empty":
