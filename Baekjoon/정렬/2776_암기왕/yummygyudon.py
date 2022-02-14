@@ -8,7 +8,8 @@ for _ in range(T) :
     print(real)
     m = int(sys.stdin.readline())
     hear = list(map(int, sys.stdin.readline().split()))
-    same = real & set(hear.copy())
+    same = real & set(hear.copy()) # 본래 위치를 유지한 hear리스트는 1,0 출력할 때 필요
+    # copy해서 중복값만 찾기
     print(same)
 
     for num in hear :
