@@ -13,6 +13,9 @@ for i in range(dummy_cnt):
     stack.append(temp)
 
 ## 시간 초과
+## books: 숫자 리스트
+## book_num: 1, 2, 3, 4 ... 책 순서
+
 # for book_num in books:
 #     for dummy in stack:
 #         if dummy:

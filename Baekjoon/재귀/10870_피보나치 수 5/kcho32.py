@@ -19,5 +19,13 @@ def fibonacci(n):
     else:
         return fibonacci(n-1) + fibonacci(n-2)
 
-print(fibonacci(10))
+print(fibonacci(int(input())))
 
+
+"""
+fibonacci(n-1)
+= fibonacci(n-2) + fibonacci(n-3)
+= fibonacci(n-3) + fibonacci(n-4) + fibonacci(n-4) + fibonacci(n-5)
+= ... + 1 + 0
+
+"""

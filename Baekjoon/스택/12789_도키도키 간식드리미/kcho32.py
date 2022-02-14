@@ -20,7 +20,6 @@ while True:
                     wait.append(line.pop())
             else:
                 wait.append(line.pop())
-        print(wait, line)
     else:
         if wait:
             if wait[-1] != num:
