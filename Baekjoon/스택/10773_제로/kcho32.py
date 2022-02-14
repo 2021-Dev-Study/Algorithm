@@ -17,7 +17,6 @@ for num in str:
             nums.append(num)
     else:
         nums.append(num)
-    print(nums)
 
 for num in nums:
     answer += num

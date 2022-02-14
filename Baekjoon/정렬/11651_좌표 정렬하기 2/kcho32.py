@@ -1,5 +1,7 @@
 import sys
 
+
+
 n = int(sys.stdin.readline().rstrip())
 nums = []
 for _ in range(n):

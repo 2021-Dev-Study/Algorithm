@@ -9,7 +9,6 @@ for _ in range(n):
     
     for i in range(record):
         x = left[0]
-        print(type(x))
         if x + 500 in left:
             if x + 1000 in right and x + 1500 in right:
                 left.remove(x + 500)

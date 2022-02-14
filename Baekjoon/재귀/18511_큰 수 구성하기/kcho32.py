@@ -41,6 +41,7 @@ def big_num(N, nums):
         if y == 0:
             answer.append(0)
             return 0
+            
         tmp = []
         x = N % 10
         print(x)

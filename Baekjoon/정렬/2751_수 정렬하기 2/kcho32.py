@@ -21,7 +21,7 @@ nums: list = [int(sys.stdin.readline().rstrip()) for _ in range(n)]
 
 # print("\n".join(list(map(str, nums))))
 
-
-sorted_nums: list = sorted(nums)
+## sorted는 병합 + 퀵정렬 -> nlog(n) 일반 삽입, 버블 (n^2)보다 빠르다
+nums: list = sorted(nums)
 
 print("\n".join(list(map(str, nums))))

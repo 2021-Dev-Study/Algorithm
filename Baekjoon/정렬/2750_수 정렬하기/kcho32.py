@@ -94,5 +94,5 @@ for i in range(1, n):
     for j in range(i, pd, -1):
         nums[j] = nums[j-1]
     nums[pd] = key
-    
-    print("\n".join(list(map(str, nums))))
+
+print("\n".join(list(map(str, nums))))

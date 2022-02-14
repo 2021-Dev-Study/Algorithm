@@ -17,5 +17,5 @@ while str:
             stack.append(x)
     else:
         stack.append(x)
-print(str)
-print(stack)
+
+print(len(stack))
