@@ -60,11 +60,14 @@ from collections import deque
 n = int(input())
 deq = deque(range(1, n+1))
 
+# 1, n까지만 하면 덱에는 1개의 수만 남게 됨
 for i in range(1, n):
+    # i ** 3는 너무 큰 수가 되기 때문에
+    # 원하는 수 -1 만큼 로테이트 후 pop하기.
     n_rot = (i ** 3 - 1) % len(deq)
     deq.rotate(-n_rot)
     deq.popleft()
-    print(deq)
+
 
 print(deq[0])
 
