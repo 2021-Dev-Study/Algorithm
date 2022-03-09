@@ -21,20 +21,22 @@ N, M, K = map(int, sys.stdin.readline().rstrip().split(" "))
 nums: list = list(map(int, sys.stdin.readline().rstrip().split(" ")))
 # 입력 받은 자연수들을 크기 순으로 정렬
 nums.sort()
+max_num = nums.pop()
+second_max_num = nums.pop()
+
 answer = 0
 
 while M:
     count = K
-    max_num = nums.pop()
-    
-    while count:
-        answer += max_num
-        count -= 1
+
+    for i in range(K):
         if not M:
             break
+        answer += max_num
         M -= 1
-
-        print(M, K, answer)
+    if not M:
+        break
+    answer += second_max_num
+    M -= 1
     
-
 print(answer)
