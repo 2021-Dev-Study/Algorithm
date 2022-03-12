@@ -9,5 +9,5 @@ for cards in deck:
         if card < min:
             min = card
     answer_group.append(min)
-    print(answer_group)
+
 print(max(answer_group))
