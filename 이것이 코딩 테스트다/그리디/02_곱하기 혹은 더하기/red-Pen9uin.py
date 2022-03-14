@@ -1,22 +1,25 @@
 # 작성자: red-Pen9uin
-# 1회차 작성
-# 수행 결과:  KB /  ms
+# 1회차 작성: 2022-03-06
+# Classification: greedy algorithm
 
-import sys
-import time
-start_time = time.time()
+"""########### for time & memory trace ###########"""
+# import sys
+# sys.path.append('D:\Dropbox\Github-Repository\TIL\mylib')
+# import mytracker
+##################################################
 
 word = sys.stdin.readline().rstrip('\n')
-num = 0
+num = int(word[0])
 
-for i in word:
-    
-    if int(i)*num > 1:
-        num *= int(i)
-    else:
-        num += int(i)
+for i in range(1, len(word)):
+    data = int(word[i])
+    if num <= 1 or data <= 1: # 0, 1
+        num += data
+    else: # int(i) is bigger than 1
+        num *= data
 
 print(num)
 
-end_time = time.time()
-print(f"time : {end_time - start_time}")
+##################################################
+# mytracker.finish()
+"""########### for time & memory trace ###########"""
