@@ -2,7 +2,7 @@ s = input()
 cnt_0 = 0
 cnt_1 = 0
 
-if s[0] == '0':
+if s[0] == '1':
   cnt_0 += 1
 else:
   cnt_1 += 1
