@@ -9,4 +9,3 @@ for i in range(1, len(S)) :
     elif S[i] == start and status == True :
         status = False
 print(cnt)
-
