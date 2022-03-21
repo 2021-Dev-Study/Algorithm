@@ -1,6 +1,5 @@
 def solution(food_time : list, k : int) :
     from collections import deque
-    N = len(food_time)
     q = deque()
     idx = 1
     for f in food_time :
