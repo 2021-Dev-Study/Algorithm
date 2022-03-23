@@ -1,3 +1,5 @@
+
+# 프로그래머스에서 처참하게 all 실패ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
 def solution(n, build_frame) :
     m = [[0]*(n+1) for _ in range(n+1)] # 바닥 표시용
     for i in range(n+1):

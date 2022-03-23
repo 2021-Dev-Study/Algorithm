@@ -7,7 +7,7 @@
 
 # 끝난뒤에 방향바뀌는 점 유의
 def direct_rotate(now_d, direct) :
-    if direct =="L" :
+    if direct =="L" : #
         now_d = now_d-1
         if now_d == -1 :
             now_d = 3
@@ -16,6 +16,9 @@ def direct_rotate(now_d, direct) :
         if now_d == 4 :
             now_d = 0
     return now_d
+
+
+
 
 N = int(input())
 m = [[0]*(N+1) for _ in range(N+1)]
@@ -65,10 +68,13 @@ while q :
             tail_y, tail_x = body_ls.pop(0) # 꼬리 삭제
             visited[tail_y][tail_x] = 0 # 꼬리 부분 다시 방문 0으로 초기화
 
+
+
         end_time += 1 # 초 경과 누적
         if end_time in change_d: # 끝난 뒤 방향 바뀌는 것
             dir = direct_rotate(dir, change_d[end_time])
         q.append([body_ls, dir])
+
     else :
         end_time += 1
         break
