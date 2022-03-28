@@ -35,6 +35,9 @@ import mytracker
     
 #     return answer
 
+"""
+인터넷 검색함!!
+"""
 import heapq
 
 def solution(N, num):
