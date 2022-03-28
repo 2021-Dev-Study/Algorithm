@@ -1,4 +1,3 @@
-from calendar import c
 import sys
 from collections import deque
 
@@ -20,7 +19,7 @@ current = [0, 0]
 body = deque([[0, 0]])
 loop_break = False
 
-# 사과 놓고 
+# 사과 놓고 -> 행열 기준이라 [행][열] -> (열, 행)
 board ={f'{[i, j]}' : 2 if [j+1, i+1] in apples else 0 for i in range(n) for j in range(n)}
 board[f'{current}'] = 1
 

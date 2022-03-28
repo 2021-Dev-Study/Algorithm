@@ -2,10 +2,8 @@
 # 계획
 # 먼저 치킨 집의 위치와 집의 위치 찾고 각각 리스트에 넣기
 # 각 치킨집과 모든 집들의 거리를 합산해서 저장 -> 오름차 정렬 후 앞에서 M개를 더해준다
-from distutils import dist
-from math import comb
-from multiprocessing import pool
 import sys
+from itertools import combinations
 
 n, m = map(int, input().split())
 board = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]
@@ -52,9 +50,6 @@ for chicken in chicken_list:
 
 # print(answer)
 
-
-from itertools import combinations
-
 possible_options = list(combinations(range(len(chicken_list)), m))
 
 for compare_index in possible_options:
@@ -67,6 +62,5 @@ for compare_index in possible_options:
         tmp_list.append(min_distance)
     answer.append(sum(tmp_list))
 
-print(distance_list)
-print(possible_options)
-print(answer)
+
+print(min(answer))
