@@ -8,8 +8,6 @@ for i in range(len(food_times)):
 
 table = Counter(table)
 
-# if k > len(table):
-#     k -= len(table)
 
 
 print(table)
