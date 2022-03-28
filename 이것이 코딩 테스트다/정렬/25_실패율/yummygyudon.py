@@ -27,7 +27,11 @@ def solution(N, stages) :
     result =[]
     players = len(stages)
     for i in range(1, N+1) :
-        p = stages.count(i)
+        p = 0
+        for s in stages :
+            if s == i :
+                p += 1
+        # p = stages.count(i) # 아...
         if players > 0 :
             fail_rate = p / players
         else :

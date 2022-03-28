@@ -1,4 +1,5 @@
 N = int(input())
+# DP 방식 틀림
 # cards = []
 # for _ in range(N) :
 #     cards.append(int(input()))
