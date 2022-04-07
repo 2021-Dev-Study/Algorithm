@@ -11,6 +11,8 @@ for i in range(m):
     idx, dest = map(int, input().split())
     graph[idx].append(dest)
     graph[dest].append(idx)
+    graph[idx].sort()
+    graph[dest].sort()
 
 def bfs(graph, visited, start):
     queue = deque([start])
