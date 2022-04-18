@@ -13,32 +13,28 @@
 
 # print(" ".join(list(map(str, answer))))
 
+from collections import deque
 
 n = int(input())
-nums = list(enumerate(map(int, input().split())))
+nums = deque(list(enumerate(map(int, input().split()))))
 answer = [-1 for i in range(n)]
 stack = []
+x = nums.pop()
 
-for idx, num in nums:
-    if stack:
-        x = nums[stack[-1]][1]
-        comp = num
-        if x >= num:
-            stack.append(idx)
+while True:
+    if not nums:
+        break
+    if not stack:
+        stack.append(nums.pop())
+    else:
+        if nums[-1][1] <= stack[-1][1]:
+            stack.append(nums.pop())
+            print(nums)
+            print(stack)
         else:
             while stack:
-                y = stack.pop()
-                
-                if nums[y][1] < comp:
-                    comp = nums[y][1]
-                
-                answer[y] = comp
-    else:
-        stack.append(idx)
+                idx, num = stack.pop()
+                answer[idx] = x[1]
+            x = nums.pop()
+
 print(answer)
-"""
-
-
-
-
-"""
