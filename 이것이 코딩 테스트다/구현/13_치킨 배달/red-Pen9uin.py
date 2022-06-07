@@ -1,6 +1,7 @@
 # 작성자: red-Pen9uin
 # 작성일: 2022-03-21
-# Classification: Implementation algorithm
+# 수정일: 2022-06-07
+# Classification: Implementation algorithm + 구현
 # 13_치킨 배달
 
 """########### for time & memory trace ###########"""
